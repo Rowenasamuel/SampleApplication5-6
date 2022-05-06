@@ -25,7 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: Percy Test
-        run: npx @percy/cli snapshot _site/
+        run:  npm run test #npx @percy/cli snapshot _site/
       
 
       # Runs a single command using the runners shell
