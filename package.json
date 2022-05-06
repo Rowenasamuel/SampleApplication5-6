@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "cypress": "^9.6.0"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.1.2",
+    "@percy/cypress": "^3.1.1"
   }
 }
