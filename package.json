@@ -2,8 +2,14 @@
   "dependencies": {
     "cypress": "^9.6.0"
   },
+  "scripts": {
+    "percy:cypress": "percy exec -- cypress run",
+    "start:server": "serve -l 8080 .",
+    "test": "start-server-and-test start:server 8080 percy:cypress"
+  },
   "devDependencies": {
     "@percy/cli": "^1.1.2",
-    "@percy/cypress": "^3.1.1"
+    "@percy/cypress": "^3.1.1",
+    "start-server-and-test": "^1.14.0"
   }
 }
